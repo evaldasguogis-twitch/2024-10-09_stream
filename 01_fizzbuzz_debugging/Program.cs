@@ -36,19 +36,19 @@ namespace _01_fizzbuzz_debugging
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 1; i <= 100; i++)
             {
-                if (i % 3 == 0)
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    PrintFizzBuzz();
+                }
+                else if (i % 3 == 0)
                 {
                     PrintFizz();
                 }
                 else if (i % 5 == 0)
                 {
                     PrintBuzz();
-                }
-                else if (i % 3 == 0 && i % 5 == 0)
-                {
-                    PrintFizzBuzz();
                 }
                 else
                 {
